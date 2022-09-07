@@ -12,7 +12,7 @@ public class Director {
     
     public void construirClimaRegiao(Builder builder){
         builder.setTemperatura(30);
-        builder.setRegiao(new Regiao("BRASIL"));
+        builder.setRegiao(new Regiao("NORDESTE"));
         builder.setDensidade((float) 1.115);
         builder.setDiaNublado(true);
         builder.setPrevisao("Previsão de chuva");
