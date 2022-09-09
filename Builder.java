@@ -12,7 +12,7 @@ public interface Builder {
     
     void setTemperatura(int temperatura);
     void setDensidade(float densidade);
-    void setDiaNublado(boolean nublado);
+    void setDiaNublado(String nublado);
     void setPrevisao(String previsao);
     void setRegiao(Regiao regiao);
   
