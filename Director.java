@@ -14,7 +14,6 @@ public class Director {
         builder.setTemperatura(30);
         builder.setRegiao(new Regiao("NORDESTE"));
         builder.setDensidade((float) 1.115);
-        builder.setDiaNublado(true);
         builder.setPrevisao("Previsão de chuva");
     }
     
@@ -22,7 +21,7 @@ public class Director {
         builder.setTemperatura(31);
         builder.setRegiao(new Regiao("Cajazeiras"));
         builder.setDensidade((float) 1.119);
-        builder.setDiaNublado(false);
+        builder.setDiaNublado("Não");
         builder.setPrevisao("Não há previsão de chuvas");
     }
         
@@ -31,7 +30,6 @@ public class Director {
         builder.setTemperatura(28);
         builder.setRegiao(new Regiao("Paraíba"));
         builder.setDensidade((float) 1.220);
-        builder.setDiaNublado(true);
         builder.setPrevisao("Previsão de chuva");
     }
        
