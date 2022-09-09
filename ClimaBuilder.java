@@ -8,14 +8,15 @@ package com.mycompany.builder;
  *
  * @author matheus
  */
-public class ClimaCidadeBuilder implements Builder {
+public class ClimaBuilder implements Builder{
     
     Regiao regiao;
     int temperatura;
     float densidade;
     String previsao;
-    boolean nublado;
+    String nublado;
     
+
     @Override
     public void setTemperatura(int temperatura) {
       this.temperatura=temperatura;
@@ -27,7 +28,7 @@ public class ClimaCidadeBuilder implements Builder {
     }
 
     @Override
-    public void setDiaNublado(boolean nublado) {
+    public void setDiaNublado(String nublado) {
         this.nublado=nublado;
     }
 
@@ -44,5 +45,5 @@ public class ClimaCidadeBuilder implements Builder {
     public Clima getResult() {
         return new Clima(regiao,temperatura,densidade,nublado,previsao);
     }
-    
+     
 }
