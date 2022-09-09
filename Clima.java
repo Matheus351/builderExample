@@ -12,11 +12,11 @@ public class Clima {
     
     int temperatura;
     float densidade;
-    boolean nublado;
+    String nublado;
     String previsao;
     Regiao regiao;
     
-    public Clima(Regiao regiao,int temp, float den, boolean nublado, String previsao){
+    public Clima(Regiao regiao,int temp, float den, String nublado, String previsao){
         this.temperatura=temp;
         this.densidade=den;
         this.nublado=nublado;
@@ -32,7 +32,13 @@ public class Clima {
     public void exibirClima(){
         System.out.println("Temperatura:" + this.temperatura + " graus");
         System.out.println("Densidade do ar:" + this.densidade);
-        System.out.println("Nublado:" + this.nublado);
+
+        if(this.nublado!=null){
+           System.out.println("Nublado:" + this.nublado);
+        }else{
+          System.out.println("Nublado: Não há para estado ou região");
+        }
+       
         System.out.println("Previsão:" + this.previsao);
     }
     
