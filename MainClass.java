@@ -15,9 +15,9 @@ public class MainClass {
         
         Director director = new Director();
         
-        ClimaCidadeBuilder builder = new ClimaCidadeBuilder();
-        ClimaRegiaoBuilder builder2 = new ClimaRegiaoBuilder();
-        ClimaEstadoBuilder builder3 = new ClimaEstadoBuilder(); 
+        ClimaBuilder builder = new ClimaBuilder();//cidade
+        ClimaBuilder builder2 = new ClimaBuilder();//estado
+        ClimaBuilder builder3 = new ClimaBuilder();//região 
         
         director.constuirClimaCidade(builder);
         director.construirClimaRegiao(builder2);
